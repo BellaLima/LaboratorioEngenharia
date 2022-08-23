@@ -3,7 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Exemplo JavaScript</title>
-        <script type="text/javascript">alert(window.location);</script>
+        <script type="text/javascript">alert(window.location);
+        var date = new() Date;
+        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
+        document.write(date.toLocaleDateString('pt-BR', options));
+        </script>
     </head>
     <body>
         <h1>Bem-Vindo a Pagina!!</h1>
