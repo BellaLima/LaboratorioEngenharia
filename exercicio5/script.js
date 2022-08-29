@@ -1,14 +1,16 @@
-function conferePalavra(palavra){
-	let reverse = palavra.split('').reverse().join('');
-	if (palavra = reverse) {
-		document.write('é um palíndromo')
-	} else{
-		document.write('não é um palíndromo')
-	}
-}
-let palavra = document.getElementById('campoPalavra');
-envioPalavra.addEventListener('click', conferirPalavra(palavra));
+const button = document.querySelector('#button');
+        const resultText = document.querySelector('#result');
 
-/* SPLIT divide a string em substring e coloca numa array e o retorna;
-REVERSE inverte os itens de uma array
-JOIN junta os elementos da array em uma stringe retorna essa string */
+        function invertText(text) {
+        const changedText = text.split('').reverse().join('');
+        return text === changedText ? true : false;
+        }
+
+        button.addEventListener('click', () => {
+            const textValue = document.querySelector('#text').value;
+            const result  = invertText(textValue);
+
+            result
+                ? resultText.innerHTML = 'O texto é um palídromo'
+                : resultText.innerHTML = 'O texto não é um palídromo';
+        }   );
