@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<button id="meuButao">Try it</button>
+<script>
+    document.getElementById("meuButao").addEventListener("click", function(){
+        let e =document.createElement("P");
+        let t =document.createTextNode("Meu paragrafo criado com js");
+        e.appendChild(t);
+        document.body.appendChild(e);
+    })
+
+    function myFunction(){
+        
+    }
+</script>
+
+</body>
+</html>
