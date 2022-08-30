@@ -1,16 +1,26 @@
-const button = document.querySelector('#button');
-        const resultText = document.querySelector('#result');
+document.querySelector("#envioPalavra").addEventListener('click', function(e){
 
-        function invertText(text) {
-        const changedText = text.split('').reverse().join('');
-        return text === changedText ? true : false;
-        }
+    let palavra = document.querySelector("#campoPalavra").value;
 
-        button.addEventListener('click', () => {
-            const textValue = document.querySelector('#text').value;
-            const result  = invertText(textValue);
+    let palavrasemespaco = palavra.replace(/\s+/g, '').toLowerCase();
 
-            result
-                ? resultText.innerHTML = 'O texto é um palídromo'
-                : resultText.innerHTML = 'O texto não é um palídromo';
-        }   );
+    let palavrainvertida = Reverse_String(palavrasemespaco);
+
+    if(palavrasemespaco == palavrainvertida){
+        alert(`A palvra/frase: (${palavra}) é um Palindromo`);
+    }else{
+        alert(`A palvra/frase: (${palavra}) NÃO é um Palindromo`);
+    }
+
+})
+
+function Reverse_String(str){
+    
+    let toarray = str.split("");
+
+    let reverseArray = toarray.reverse();
+
+    let tostring = reverseArray.join("");
+
+    return tostring;
+}

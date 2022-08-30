@@ -1,39 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relógio</title>
-    
-    <!-- CSS -->
-    <style>
-        html {
-            font-family: sans-serif;
-        }
-
-        body {
-            width: 50%;
-            max-width: 800px;
-            min-width: 480px;
-            margin: 0 auto;
-        }
-
-        .ultimoResultado {
-            color: white;
-            padding: 3px;
-        }
-        .center{
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exemplo de relogio com JavaScript</title>
+       <style>
+            html 
+            {
+                font-family: Arial;
+                font-weight: bold;
+                text-transform: capitalize;
+                font-size: 10em;
+                background-color: rgb(221, 184, 247);
+            }
+            body
+            {
+            align-items: 50px;
+            justify-content: center;
             text-align: center;
-        }
-    </style>
-    
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%,-50%)
 
-    <!-- JavaScript -->
-    <script type="text/javascript" src="script.js" defer></script> 
-</head>
-<body>
-    <h1 class="center">Relógio</h1>
-
-</body>
+            }
+       </style>
+    </head>
+    <body onload="startTime()">
+        <p id="relogio"></p>
+        <script type="text/javascript" src="script.js" defer></script>
+    </body>
 </html>
