@@ -1,18 +1,22 @@
-let btnAdicionar = document.getElementById("btnAdicionar");
-btnAdicionar.addEventListener("click", function () {
+let palavra = document.getElementById("button");
+palavra.addEventListener("click", Palindromo, false);
 
-    let elementos = [];
-    let valor = document.getElementById("valor").value;
-    elementos.push(valor.toString());
+function Palindromo() {
+    let texto = document.getElementById('txtusuario').value;
+    let textoSemEspaco = texto.replace(" ", "").toLowerCase();
+    let textoInverto = invert(textoSemEspaco);
+    if (textoSemEspaco == textoInverto)
+        alert('É um Palíndromo!') 
+    else
+        alert('Não é um Palíndromo!')
+    
+}
 
-    let elementoOL = document.createElement("OL");
-    elementos.forEach(element => {
-        let elementLI = document.createElement("LI");
-        let textNode = document.createTextNode(element);
-        elementLI.appendChild(textNode);
-
-        elementoOL.appendChild(textNode);
-    });
-
-    document.body.appendChild(elementoOL);
-});
+function invert(str) {
+    var newString = "";
+    for (var i = str.length - 1; i >= 0; i--) { 
+        newString += str[i];
+    }
+    return newString;
+    
+}
