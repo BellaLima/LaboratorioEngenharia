@@ -6,9 +6,9 @@ function Palindromo() {
     let textoSemEspaco = texto.replace(" ", "").toLowerCase();
     let textoInverto = invert(textoSemEspaco);
     if (textoSemEspaco == textoInverto)
-        alert('É um Palíndromo!') 
+        alert('É Palíndromo') 
     else
-        alert('Não é um Palíndromo!')
+        alert('Não é Palíndromo')
     
 }
 
