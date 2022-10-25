@@ -1,12 +1,12 @@
 import React from 'react';
 
-class App extends React.Component {
+class Nome extends React.Component {
 
 render() {
 
 	return (
 	<div>
-	<Child name = "getDerivedStateFromProps()"></Child>
+	<Child name = "Salcicha"></Child>
 	</div>
 	)
 }
@@ -16,7 +16,7 @@ class Child extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
-		name: "kapil"
+		name: "Isabela"
 		};
 	}
 	static getDerivedStateFromProps(props, state) {
@@ -42,4 +42,4 @@ class Child extends React.Component{
 	}
 }
 					
-export default App;
+export default Nome;

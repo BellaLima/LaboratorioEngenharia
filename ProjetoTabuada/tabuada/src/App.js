@@ -7,35 +7,28 @@ import Titulo2 from './Titulo2';
 import Cores from './Cores';
 import Mensagem from './Mensagem';
 import Header from './Header';
-import Unmounting from './Unmounting';
-import Derived from './Derived';
+import Container from './Container';
+import Nome from './Nome';
 import Should from './Should';
 import Snapshot from './Snapshot';
 import Did from './Did';
 
-let n = prompt("Digite um número", "0")
 
 function App() {
   return (
     <center>
     <div>
       <Titulo titulo = "FATEC" texto ="Faculdade de Tecnologia de Presidente Prudente" link = "https://www.fatecpp.edu.br"/>
-      <Titulo2/>
-      <Tabuada numero = {n}/>
-      <Cores/>
-      <br></br>
-      <Mensagem/>
-      <Header/>
-      <br></br>
-      <Unmounting/>
-      <br></br>
-      <Derived/>
-      <br></br>
-      <Should/>
-      <br></br>
-      <Snapshot/>
-      <br></br>
-      <Did/>
+      <Titulo2 />
+      <Tabuada />
+      <Cores />
+      <Mensagem />
+      <Header />
+      <Container />
+      <Nome />
+      <Should />
+      <Snapshot />
+      <Did />
     </div>
     </center>
   );

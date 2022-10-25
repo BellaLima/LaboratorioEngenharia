@@ -30,7 +30,7 @@ class Child extends React.Component {
     }
     render() {
         return (
-            <h1>Unmounting - Exercício 4</h1>
+            <h1>Exercício 4</h1>
         )
     }
 }
