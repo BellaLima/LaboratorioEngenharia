@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-function Titulo2() {
-    return <h2>Componente titulo com função!!!!</h2>;
-  }
-  
-  export default Titulo2;
+function Titulo2(){
+    return <h2>Abaixo você verá a tabuada do número escolhido.</h2>
+};
+
+export default Titulo2;
