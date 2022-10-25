@@ -9,8 +9,8 @@ import Mensagem from './Mensagem';
 import Header from './Header';
 import Container from './Container';
 import Nome from './Nome';
-import Should from './Should';
-import Snapshot from './Snapshot';
+import Atualizar from './Atualizar';
+import Arcoiris from './Arcoiris';
 import Did from './Did';
 
 
@@ -26,8 +26,8 @@ function App() {
       <Header />
       <Container />
       <Nome />
-      <Should />
-      <Snapshot />
+      <Atualizar />
+      <Arcoiris />
       <Did />
     </div>
     </center>
