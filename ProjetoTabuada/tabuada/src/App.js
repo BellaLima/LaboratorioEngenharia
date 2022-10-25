@@ -11,7 +11,7 @@ import Container from './Container';
 import Nome from './Nome';
 import Atualizar from './Atualizar';
 import Arcoiris from './Arcoiris';
-import Did from './Did';
+import Hello from './Hello';
 
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
       <Nome />
       <Atualizar />
       <Arcoiris />
-      <Did />
+      <Hello />
     </div>
     </center>
   );
